@@ -17,10 +17,11 @@ Bundle 'gmarik/vundle'
 
 " Github managed
 
-" vim managed
+" vim-script.org managed
 Bundle 'Zenburn'
+Bundle 'python.vim--Vasiliev'
 
-" Non github managed
+" Other git source
 
 " Initialize vim bundles
 if init
@@ -32,11 +33,30 @@ color zenburn
 syntax on
 filetype plugin indent on
 
+" Tab options
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set smartindent
+
+" Search options
+set ignorecase		        " ignore case on searches
+set smartcase		        " overrides ignorecase sometimes
+set incsearch               " Turn on incremental search
+
+" Others
+set title
+set history=120             " History
+set autoindent		        " self-explanatory
+set splitright                  " new window to the right on vsplit
+set splitbelow                  " new window below on split
+set showmode                    " Indicates when in Insert, Edit mode, etc.
+set ruler
 
 " Python
-au FileType py set autoindent
-au FileType py set smartindent
-au FileType py set textwidth=79 " PEP-8 Friendly
+let python_highlight_all=1
+au FileType python set textwidth=79 " PEP-8 Friendly
+
+" Got way too used to auto cd into directory of the file
+autocmd BufEnter * silent! lcd %:p:h
+
