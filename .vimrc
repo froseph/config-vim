@@ -39,7 +39,16 @@ endif
 " Config
 color zenburn
 syntax on
+filetype on
 filetype plugin indent on
+
+set title
+set history=120             " History
+set autoindent		        " self-explanatory
+set splitright                  " new window to the right on vsplit
+set splitbelow                  " new window below on split
+set showmode                    " Indicates when in Insert, Edit mode, etc.
+set ruler
 
 " Tab options
 set tabstop=4
@@ -52,17 +61,8 @@ set ignorecase		        " ignore case on searches
 set smartcase		        " overrides ignorecase sometimes
 set incsearch               " Turn on incremental search
 
-" Others
-set title
-set history=120             " History
-set autoindent		        " self-explanatory
-set splitright                  " new window to the right on vsplit
-set splitbelow                  " new window below on split
-set showmode                    " Indicates when in Insert, Edit mode, etc.
-set ruler
-
 " Python
-let python_highlight_all=1
+let python_highlight_all=1 " python.vim--Vasiliev option
 au FileType python set textwidth=79 " PEP-8 Friendly
 
 " Got way too used to auto cd into directory of the file
