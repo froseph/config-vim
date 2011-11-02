@@ -12,14 +12,22 @@ endif
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" Bundle magering bundle
+" Bundle managing bundle
 Bundle 'gmarik/vundle'
+" Git
+Bundle 'tpope/vim-fugitive'
+
 
 " Github managed
 
 " vim-script.org managed
+" My colors
 Bundle 'Zenburn'
+" Python syntax
 Bundle 'python.vim--Vasiliev'
+Bundle 'trailing-whitespace'
+Bundle 'localvimrc'
+"Bundle 'vcscommand.vim' other vcs systems
 
 " Other git source
 
