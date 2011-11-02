@@ -61,6 +61,10 @@ set ignorecase		        " ignore case on searches
 set smartcase		        " overrides ignorecase sometimes
 set incsearch               " Turn on incremental search
 
+" Local vimrc options
+let g:localvimrc_name = 'local.vimrc'
+let g:localvimrc_ask = 0
+
 " Python
 let python_highlight_all=1 " python.vim--Vasiliev option
 au FileType python set textwidth=79 " PEP-8 Friendly
