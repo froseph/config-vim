@@ -14,11 +14,11 @@ call vundle#rc()
 
 " Bundle managing bundle
 Bundle 'gmarik/vundle'
-" Git
-Bundle 'tpope/vim-fugitive'
-
 
 " Github managed
+Bundle 'nathanaelkane/vim-indent-guides'
+" Git
+Bundle 'tpope/vim-fugitive'
 
 " vim-script.org managed
 " My colors
@@ -68,6 +68,13 @@ let g:localvimrc_ask = 0
 " Python
 let python_highlight_all=1 " python.vim--Vasiliev option
 au FileType python set textwidth=79 " PEP-8 Friendly
+
+" Indent Guides:
+" looks weird in zenburn so i'm defining my own colors
+let g:indent_guides_auto_colors = 0
+hi IndentGuidesOdd ctermbg=234
+hi IndentGuidesEven ctermbg=235
+let g:indent_guides_start_level = 2
 
 " Got way too used to auto cd into directory of the file
 autocmd BufEnter * silent! lcd %:p:h
