@@ -19,6 +19,7 @@ Bundle 'gmarik/vundle'
 Bundle 'nathanaelkane/vim-indent-guides'
 " Git
 Bundle 'tpope/vim-fugitive'
+Bundle 'sophacles/vim-bundle-mako'
 
 " vim-script.org managed
 " My colors
