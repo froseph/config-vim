@@ -62,6 +62,17 @@ set ignorecase		        " ignore case on searches
 set smartcase		        " overrides ignorecase sometimes
 set incsearch               " Turn on incremental search
 
+" Key bindings
+" Split w indow keys
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-h> <C-w>h
+map <C-l> <C-w>l
+map <C-m> <C-w>_
+
+
+" Plugin configs
+
 " Local vimrc options
 let g:localvimrc_name = 'local.vimrc'
 let g:localvimrc_ask = 0
@@ -77,6 +88,7 @@ hi IndentGuidesOdd ctermbg=234
 hi IndentGuidesEven ctermbg=235
 let g:indent_guides_start_level = 2
 
+" Auto commands
 " Got way too used to auto cd into directory of the file
 autocmd BufEnter * silent! lcd %:p:h
 
