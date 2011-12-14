@@ -28,6 +28,7 @@ Bundle 'Zenburn'
 Bundle 'python.vim--Vasiliev'
 Bundle 'trailing-whitespace'
 Bundle 'localvimrc'
+Bundle 'simplenote'
 "Bundle 'vcscommand.vim' other vcs systems
 
 " Other git source
