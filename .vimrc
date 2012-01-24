@@ -28,7 +28,7 @@ Bundle 'Zenburn'
 Bundle 'python.vim--Vasiliev'
 Bundle 'trailing-whitespace'
 Bundle 'localvimrc'
-Bundle 'simplenote'
+Bundle 'simplenote.vim'
 "Bundle 'vcscommand.vim' other vcs systems
 
 " Other git source
@@ -89,7 +89,13 @@ hi IndentGuidesOdd ctermbg=234
 hi IndentGuidesEven ctermbg=235
 let g:indent_guides_start_level = 2
 
+" Fuck you omni complete
+let g:omni_sql_no_default_maps = 1
+
 " Auto commands
 " Got way too used to auto cd into directory of the file
 autocmd BufEnter * silent! lcd %:p:h
 
+
+" Plugin settings
+source ~/.private/simplenoterc
