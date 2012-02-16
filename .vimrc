@@ -20,6 +20,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 " Git
 Bundle 'tpope/vim-fugitive'
 Bundle 'sophacles/vim-bundle-mako'
+Bundle 'jelera/vim-javascript-syntax'
 
 " vim-script.org managed
 " My colors
@@ -29,6 +30,7 @@ Bundle 'python.vim--Vasiliev'
 Bundle 'trailing-whitespace'
 Bundle 'localvimrc'
 Bundle 'simplenote.vim'
+Bundle 'Lucius'
 "Bundle 'vcscommand.vim' other vcs systems
 
 " Other git source
@@ -38,8 +40,28 @@ if init
     BundleInstall
 endif
 
+" Plugin configs
+
+" Zenburn options
+" looks weird in zenburn so i'm defining my own colors
+let g:indent_guides_auto_colors = 0
+
+" Local vimrc options
+let g:localvimrc_name = 'local.vimrc'
+let g:localvimrc_ask = 0
+
+" Python
+let python_highlight_all=1 " python.vim--Vasiliev option
+
+hi IndentGuidesOdd ctermbg=234
+hi IndentGuidesEven ctermbg=235
+let g:indent_guides_start_level = 2
+
+" Fuck you omni complete
+let g:omni_sql_no_default_maps = 1
+
 " Config
-color zenburn
+color lucius
 syntax on
 filetype on
 filetype plugin indent on
@@ -72,29 +94,10 @@ map <C-l> <C-w>l
 map <C-m> <C-w>_
 
 
-" Plugin configs
-
-" Local vimrc options
-let g:localvimrc_name = 'local.vimrc'
-let g:localvimrc_ask = 0
-
-" Python
-let python_highlight_all=1 " python.vim--Vasiliev option
-au FileType python set textwidth=79 " PEP-8 Friendly
-
-" Indent Guides:
-" looks weird in zenburn so i'm defining my own colors
-let g:indent_guides_auto_colors = 0
-hi IndentGuidesOdd ctermbg=234
-hi IndentGuidesEven ctermbg=235
-let g:indent_guides_start_level = 2
-
-" Fuck you omni complete
-let g:omni_sql_no_default_maps = 1
-
 " Auto commands
 " Got way too used to auto cd into directory of the file
 autocmd BufEnter * silent! lcd %:p:h
+au FileType python set textwidth=79 " PEP-8 Friendly
 
 
 " Plugin settings
