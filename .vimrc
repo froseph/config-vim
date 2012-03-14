@@ -34,6 +34,7 @@ Bundle 'localvimrc'
 Bundle 'simplenote.vim'
 Bundle 'Lucius'
 "Bundle 'vcscommand.vim' other vcs systems
+                                e
 
 " Other git source
 
@@ -53,8 +54,8 @@ let python_highlight_all=1 " python.vim--Vasiliev option
 
 " Indent Guides
 let g:indent_guides_auto_colors = 0
-hi IndentGuidesOdd ctermbg=234
-hi IndentGuidesEven ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=234
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=240
 let g:indent_guides_start_level = 2
 
 " Fuck you omni complete
