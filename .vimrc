@@ -21,6 +21,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'tpope/vim-fugitive'
 Bundle 'sophacles/vim-bundle-mako'
 Bundle 'jelera/vim-javascript-syntax'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'} " Try zencoding?
 
 " vim-script.org managed
 " My colors
