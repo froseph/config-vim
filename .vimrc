@@ -43,10 +43,6 @@ endif
 
 " Plugin configs
 
-" Zenburn options
-" looks weird in zenburn so i'm defining my own colors
-let g:indent_guides_auto_colors = 0
-
 " Local vimrc options
 let g:localvimrc_name = 'local.vimrc'
 let g:localvimrc_ask = 0
@@ -54,6 +50,8 @@ let g:localvimrc_ask = 0
 " Python
 let python_highlight_all=1 " python.vim--Vasiliev option
 
+" Indent Guides
+let g:indent_guides_auto_colors = 0
 hi IndentGuidesOdd ctermbg=234
 hi IndentGuidesEven ctermbg=235
 let g:indent_guides_start_level = 2
