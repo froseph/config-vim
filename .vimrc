@@ -34,7 +34,6 @@ Bundle 'localvimrc'
 Bundle 'simplenote.vim'
 Bundle 'Lucius'
 "Bundle 'vcscommand.vim' other vcs systems
-                                e
 
 " Other git source
 
