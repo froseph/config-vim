@@ -27,12 +27,13 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " vim-script.org managed
 " My colors
 Bundle 'Zenburn'
-" Python syntax
+Bundle 'Lucius'
+
+" Provides python syntax
 Bundle 'python.vim--Vasiliev'
 Bundle 'trailing-whitespace'
 Bundle 'localvimrc'
 Bundle 'simplenote.vim'
-Bundle 'Lucius'
 "Bundle 'vcscommand.vim' other vcs systems
 
 " Other git source
