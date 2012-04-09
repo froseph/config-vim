@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
 
 " Github managed
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'scrooloose/syntastic'
 " Git
 Bundle 'tpope/vim-fugitive'
 Bundle 'sophacles/vim-bundle-mako'
@@ -103,3 +104,6 @@ au FileType python set textwidth=79 " PEP-8 Friendly
 
 " Plugin settings
 source ~/.private/simplenoterc
+
+set laststatus=2
+set statusline+=%{SyntasticStatuslineFlag()}\ %f%M%R\ (%l,%c\ %P)
