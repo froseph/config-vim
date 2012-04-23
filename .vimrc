@@ -18,12 +18,14 @@ Bundle 'gmarik/vundle'
 " Github managed
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
-" Git
+Bundle 'gregsexton/MatchTag'
 Bundle 'tpope/vim-fugitive'
 Bundle 'sophacles/vim-bundle-mako'
 Bundle 'jelera/vim-javascript-syntax'
-" Try zencoding insteard of sparkup/
+" Try zencoding insteard of sparkup?
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" Other git source
 
 " vim-script.org managed
 " My colors
@@ -36,8 +38,8 @@ Bundle 'trailing-whitespace'
 Bundle 'localvimrc'
 Bundle 'simplenote.vim'
 "Bundle 'vcscommand.vim' other vcs systems
-
-" Other git source
+Bundle 'mako.vim--Torborg'
+Bundle 'mako.vim'
 
 " Initialize vim bundles
 if init
@@ -107,3 +109,6 @@ source ~/.private/simplenoterc
 
 set laststatus=2
 set statusline+=%{SyntasticStatuslineFlag()}\ %f%M%R\ (%l,%c\ %P)
+
+" Highlight the column we need to do a break
+set colorcolumn=+0
