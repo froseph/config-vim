@@ -112,3 +112,4 @@ set statusline+=%{SyntasticStatuslineFlag()}\ %f%M%R\ (%l,%c\ %P)
 
 " Highlight the column we need to do a break
 set colorcolumn=+0
+set modeline
