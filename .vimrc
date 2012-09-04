@@ -107,7 +107,7 @@ au FileType python set textwidth=79 " PEP-8 Friendly
 
 
 " Plugin settings
-source ~/.private/simplenoterc
+source ~/.config/simplenote/simplenote.vimrc
 
 set laststatus=2
 set statusline+=%{SyntasticStatuslineFlag()}\ %f%M%R\ (%l,%c\ %P)
