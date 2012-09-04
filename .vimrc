@@ -31,6 +31,7 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " My colors
 Bundle 'Zenburn'
 Bundle 'Lucius'
+Bundle 'altercation/vim-colors-solarized'
 
 " Provides python syntax
 Bundle 'python.vim--Vasiliev'
@@ -65,7 +66,8 @@ let g:indent_guides_start_level = 2
 let g:omni_sql_no_default_maps = 1
 
 " Config
-color lucius
+set background=dark
+colorscheme solarized
 syntax on
 filetype on
 filetype plugin indent on
