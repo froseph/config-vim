@@ -116,5 +116,5 @@ set statusline+=%{SyntasticStatuslineFlag()}\ %f%M%R\ (%l,%c\ %P)
 set colorcolumn=+0
 set modeline
 
-# deleteness
+" Deletness
 set backspace=indent,eol,start
