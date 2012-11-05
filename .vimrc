@@ -24,6 +24,7 @@ Bundle 'sophacles/vim-bundle-mako'
 Bundle 'jelera/vim-javascript-syntax'
 " Try zencoding insteard of sparkup?
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'Valloric/MatchTagAlways'
 
 " Other git source
 
@@ -64,6 +65,15 @@ let g:indent_guides_start_level = 2
 
 " Fuck you omni complete
 let g:omni_sql_no_default_maps = 1
+
+" MatchTagAlways
+let g:mta_filetypes = {
+            \ 'html' : 1,
+            \ 'xhtml' : 1,
+            \ 'xml' : 1,
+            \ 'jinja' : 1,
+            \ 'mako' : 1,
+            \}
 
 " Config
 set background=dark
