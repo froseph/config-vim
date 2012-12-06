@@ -25,6 +25,7 @@ Bundle 'jelera/vim-javascript-syntax'
 " Try zencoding insteard of sparkup?
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'Valloric/MatchTagAlways'
+Bundle 'groenewege/vim-less'
 
 " Other git source
 
