@@ -23,7 +23,10 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'sophacles/vim-bundle-mako'
 Bundle 'jelera/vim-javascript-syntax'
 " Try zencoding insteard of sparkup?
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Zencoding follows http://docs.emmet.io/ is is updated thus the switch
+Bundle 'mattn/zencoding-vim'
+
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'groenewege/vim-less'
 
