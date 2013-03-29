@@ -26,7 +26,8 @@ Bundle 'jelera/vim-javascript-syntax'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Zencoding follows http://docs.emmet.io/ is is updated thus the switch
 Bundle 'mattn/zencoding-vim'
-
+Bundle 'plasticboy/vim-markdown'
+Bundle 'waylan/vim-markdown-extra-preview'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'groenewege/vim-less'
 
