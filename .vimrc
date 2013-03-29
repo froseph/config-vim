@@ -38,7 +38,6 @@ Bundle 'groenewege/vim-less'
 Bundle 'Zenburn'
 Bundle 'Lucius'
 Bundle 'altercation/vim-colors-solarized'
-
 " Provides python syntax
 Bundle 'python.vim--Vasiliev'
 Bundle 'trailing-whitespace'
@@ -118,7 +117,10 @@ map <C-m> <C-w>_
 " Auto commands
 " Got way too used to auto cd into directory of the file
 autocmd BufEnter * silent! lcd %:p:h
-au FileType python set textwidth=79 " PEP-8 Friendly
+au FileType python set textwidth=80 " PEP-8 Friendly
+au FileType mako set textwidth=80
+au FileType javascript set textwidth=80
+au FileType markdown set textwidth=80
 
 
 " Plugin settings
