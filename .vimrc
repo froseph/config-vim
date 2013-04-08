@@ -121,6 +121,7 @@ au FileType python set textwidth=80 " PEP-8 Friendly
 au FileType mako set textwidth=80
 au FileType javascript set textwidth=80
 au FileType markdown set textwidth=80
+au FileType mkd set textwidth=80
 
 
 " Plugin settings
