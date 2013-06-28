@@ -30,6 +30,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'waylan/vim-markdown-extra-preview'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'groenewege/vim-less'
+Bundle 'Floobits/floobits-vim'
 
 " Other git source
 
