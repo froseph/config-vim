@@ -81,7 +81,7 @@ let g:mta_filetypes = {
             \}
 
 " Config
-set background=dark
+set background=light
 colorscheme solarized
 syntax on
 filetype on
