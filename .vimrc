@@ -22,6 +22,7 @@ Bundle 'gregsexton/MatchTag'
 Bundle 'tpope/vim-fugitive'
 Bundle 'sophacles/vim-bundle-mako'
 Bundle 'jelera/vim-javascript-syntax'
+"Bundle 'pangloss/vim-javascript'
 " Try zencoding insteard of sparkup?
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Zencoding follows http://docs.emmet.io/ is is updated thus the switch
@@ -40,6 +41,7 @@ Bundle 'taglist.vim'
 Bundle 'Zenburn'
 Bundle 'Lucius'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'editorconfig-vim'
 " Provides python syntax
 Bundle 'python.vim--Vasiliev'
 Bundle 'trailing-whitespace'
