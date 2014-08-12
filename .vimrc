@@ -25,13 +25,13 @@ Bundle 'jelera/vim-javascript-syntax'
 "Bundle 'pangloss/vim-javascript'
 " Try zencoding insteard of sparkup?
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Zencoding follows http://docs.emmet.io/ is is updated thus the switch
-Bundle 'mattn/zencoding-vim'
+" Emmet is new name of zen coding http://docs.emmet.io/ no first party support :(
+" Bundle 'mattn/zencoding-vim'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'waylan/vim-markdown-extra-preview'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'groenewege/vim-less'
-Bundle 'Floobits/floobits-vim'
+"Bundle 'Floobits/floobits-vim'
 Bundle 'taglist.vim'
 
 " Other git source
@@ -46,7 +46,6 @@ Bundle 'editorconfig-vim'
 Bundle 'python.vim--Vasiliev'
 Bundle 'trailing-whitespace'
 Bundle 'localvimrc'
-Bundle 'simplenote.vim'
 "Bundle 'vcscommand.vim' other vcs systems
 Bundle 'mako.vim--Torborg'
 Bundle 'mako.vim'
@@ -129,7 +128,6 @@ au FileType mkd set textwidth=80
 
 
 " Plugin settings
-source ~/.config/simplenote/simplenote.vimrc
 
 set laststatus=2
 set statusline+=%{SyntasticStatuslineFlag()}\ %f%M%R\ (%l,%c\ %P)
