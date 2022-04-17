@@ -33,6 +33,7 @@ Plug 'LunarWatcher/auto-pairs', { 'tag': '*' } " Add ending pairs. Updated forks
 Plug 'ntpeters/vim-better-whitespace' " trailing whitespace
 Plug 'mattn/emmet-vim'              " emmit
 Plug 'tpope/vim-surround'           " surround
+Plug 'alvan/vim-closetag'           " Auto close html tags
 Plug 'tpope/vim-commentary'         " commenting scri
 Plug 'tpope/vim-fugitive'           " vim plug
 Plug 'dense-analysis/ale'           " Vim ale
@@ -253,7 +254,7 @@ augroup configgroup
     au Filetype vim let b:autopairs_enabled = 0
 
     " Python
-    autocmd FileType python setlocal commentstring=#\ %s
+    autocmd FileType python setlocal commentstring=#\ %s expandtab
 
     " Scripts
     " autocmd BufEnter *.sh setlocal tabstop=2
